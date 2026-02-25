@@ -1,5 +1,5 @@
 @import "tailwindcss";
-
+@custom-variant dark (&:where(.dark, .dark *));
 @theme {
 
         --color-dark: #0D1117;
@@ -10,3 +10,28 @@
         --color-soft-gray:#8892B0;
         --color-gradient-main: linear-gradient(135deg, #A4FF7A 0%, #13611F 100%);
      }
+.dark {
+    @apply bg-dark text-light;
+}
+
+.dark .bg-linear-\[0deg\,\#294b8e_10\%\,\#0a0f22_60\%\] {
+    background: linear-gradient(0deg, var(--color-deep-blue) 10%, var(--color-dark) 60%);
+}
+
+.dark .text-\[\#13611f\] {
+    color: var(--color-neon-green);
+}
+
+.dark .text-gray-200 {
+    color: var(--color-soft-gray);
+}
+
+.dark a {
+    background-color: var(--color-deep-blue);
+    color: var(--color-neon-green);
+}
+
+.dark a:hover {
+    background-color: var(--color-highlight);
+    color: var(--color-dark);
+}

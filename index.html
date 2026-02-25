@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" id="html" class="">
 <head>
   <meta charset="UTF-8">
   <link rel="icon" type="image/svg+xml" href="/vite.svg" />
@@ -7,7 +7,6 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
   <link rel="stylesheet" href="./css/styles.css">
-  
   <title>Frontend Mentor | Social links profile</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
@@ -17,6 +16,9 @@
   </style>
 </head>
 <body class="bg-gradient-main flex items-center justify-center h-screen">
+  <button id="darkmode" class="bg-amber-50 absolute w-12 h-12 right-3 top-3 rounded-full cursor-pointer hover:opacity-80">
+    🌙
+</button>
   <div class="w-87.5 bg-linear-[0deg,#294b8e_10%,#0a0f22_60%] p-8 rounded-2xl items-center justify-center flex flex-col">
   <img src="./assets/images/avatar-jessica.jpeg" alt="Profile Picture" class="rounded-full w-18 m-5">
   <h1 class="text-3xl text-white"> Jessica Randall </h1>
@@ -32,5 +34,6 @@
     Coded by <a href="#">CarjoTV</a>.
   </footer>
   </div>
+  <script src="./js/darkmode.js "></script>
 </body>
 </html>
